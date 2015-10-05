@@ -1,0 +1,8 @@
+<ion-view view-title="{{vm.info.title || 'Audio Stream'}}">
+  <ion-content class="center" style="
+    background: url({{vm.info.coverUrl || 'images/ionic.png'}}) center center;
+    background-size: cover;">
+    <a class="button button-icon icon play-button-icon {{ vm.isPlaying ? 'ion-ios-pause' : 'ion-ios-play' }}"
+        ng-click="vm.togglePlay()"></a>
+  </ion-content>
+</ion-view>
